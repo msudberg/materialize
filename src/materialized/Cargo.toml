@@ -1,7 +1,7 @@
 [package]
 name = "materialized"
 description = "Streaming SQL materialized views."
-version = "0.7.3-dev"
+version = "0.7.4-dev"
 authors = ["Materialize, Inc."]
 license = "proprietary"
 edition = "2018"
@@ -31,7 +31,7 @@ anyhow = "1.0.40"
 askama = { version = "0.10.5", features = ["serde-json"] }
 async-trait = "0.1.50"
 atty = "0.2.14"
-backtrace = "0.3.57"
+backtrace = "0.3.59"
 build-info = { path = "../build-info" }
 cfg-if = "1.0.0"
 clap = { version = "2.33.0", features = ["wrap_help"] }
@@ -58,7 +58,7 @@ num_cpus = "1.0.0"
 openssl = { version = "0.10.34", features = ["vendored"] }
 openssl-sys = { version = "0.9.62", features = ["vendored"] }
 ore = { path = "../ore" }
-os_info = "3.0.2"
+os_info = "3.0.4"
 parse_duration = "2.1.1"
 pgwire = { path = "../pgwire" }
 prof = { path = "../prof", features = ["auto-jemalloc"] }
@@ -74,7 +74,7 @@ shell-words = "1.0.0"
 sql = { path = "../sql" }
 structopt = "0.3.21"
 sysctl = "0.4.1"
-sysinfo = "0.17.2"
+sysinfo = "0.17.3"
 tempfile = "3.2.0"
 timely = { git = "https://github.com/TimelyDataflow/timely-dataflow", default-features = false, features = ["bincode"] }
 tokio = { version = "1.5.0", features = ["sync"] }
@@ -84,7 +84,7 @@ tracing = "0.1.25"
 # TODO(benesch): we can use the default features here once tracing-subscriber
 # does not enable chrono's "oldtime" feature.
 tracing-subscriber = { version = "0.2.18", default-features = false, features = ["ansi", "env-filter", "fmt", "tracing-log"] }
-url = "2.2.1"
+url = "2.2.2"
 uuid = "0.8.2"
 
 [target.'cfg(not(target_os = "macos"))'.dependencies]
@@ -123,7 +123,7 @@ flate2 = "1.0.20"
 hex = "0.4.3"
 hex-literal = "0.3.1"
 reqwest = { version = "0.11.3", features = ["blocking"] }
-sha2 = "0.9.3"
+sha2 = "0.9.4"
 tar = "0.4.33"
 walkdir = "2.3.2"
 
